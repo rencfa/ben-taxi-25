@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Taxi St Barth | Private Luxury Driver 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --gray-bg: #f8f8f8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Nav / Langue */
+        .nav-container {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 40px 8%;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 1000;
+        }
+
+        .lang-switch {
+            background: none;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 10px 20px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .lang-switch:hover { background: #fff; color: #000; }
+
+        /* Hero Section Améliorée */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            /* Overlay plus sombre pour la lisibilité */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Visuel2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 { font-size: clamp(3rem, 12vw, 6.5rem); font-weight: 900; text-transform: uppercase; letter-spacing: -4px; line-height: 0.85; margin-bottom: 20px; }
+        .hero-sub { font-size: 1.1rem; letter-spacing: 6px; text-transform: uppercase; font-weight: 300; margin-bottom: 40px; }
+
+        /* Sections */
+        section { padding: 120px 10%; max-width: 1400px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+        
+        .img-box img { width: 100%; filter: grayscale(100%); transition: 1s ease; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        .img-box img:hover { filter: grayscale(0%); }
+
+        h2 { font-size: 3.5rem; font-weight: 900; text-transform: uppercase; margin-bottom: 35px; line-height: 0.9; letter-spacing: -2px; }
+        p { font-size: 1.25rem; color: #444; margin-bottom: 30px; font-weight: 300; line-height: 1.6; }
+
+        /* Contact & Standby Section */
+        #contact { background: var(--gray-bg); max-width: 100%; text-align: center; padding: 150px 10%; }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 25px 60px;
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 1.1rem;
+            transition: 0.4s;
+            border: 2px solid #000;
+        }
+
+        .whatsapp-btn:hover { background: transparent; color: #000; }
+
+        footer { padding: 60px 20px; text-align: center; font-size: 0.75rem; letter-spacing: 3px; color: #bbb; text-transform: uppercase; background: #fff; }
+
+        /* Logic Langues */
+        [lang="fr"] { display: none; }
+
+        @media (max-width: 900px) {
+            .grid { grid-template-columns: 1fr; gap: 50px; }
+            .img-box { order: -1; }
+            h2 { font-size: 2.5rem; }
+            section { padding: 80px 8%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-container">
+        <button class="lang-switch" onclick="switchLang()">FR / EN</button>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <div class="lang-en">
+            <h1>Ben Taxi</h1>
+            <p class="hero-sub">Full Stay Standby & Luxury Driver</p>
+            <a href="#contact" class="whatsapp-btn" style="background:transparent; border-color:#fff; color:#fff;">Reserve your week</a>
+        </div>
+        <div class="lang-fr" lang="fr">
+            <h1>Ben Taxi</h1>
+            <p class="hero-sub">Service Standby & Chauffeur Privé</p>
+            <a href="#contact" class="whatsapp-btn" style="background:transparent; border-color:#fff; color:#fff;">Réserver votre séjour</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section>
+        <div class="grid">
+            <div class="content">
+                <!-- English -->
+                <div class="lang-en">
+                    <h2>Seamless <br>Island Logistics.</h2>
+                    <p>Forget the stress of booking every ride. I specialize in <strong>weekly standby services</strong> for high-profile guests who require a dedicated driver 24/7.</p>
+                    <p>Experience Saint-Barthélemy with absolute freedom. My White Mercedes V-Class is your private lounge on wheels, ready whenever you are.</p>
+                </div>
+                <!-- French -->
+                <div class="lang-fr" lang="fr">
+                    <h2>Logistique <br>Sans Faille.</h2>
+                    <p>Oubliez la contrainte de réserver chaque trajet. Je me spécialise dans le <strong>service standby à la semaine</strong> pour une clientèle exigeante souhaitant un chauffeur dédié 24h/7j.</p>
+                    <p>Vivez St Barth en toute liberté. Mon Mercedes Classe V blanc devient votre salon privé itinérant, prêt à partir à chaque instant.</p>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="Visuel1.png" alt="Mercedes V-Class Ben Taxi St Barth">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="lang-en">
+            <h2>Let's organize your stay</h2>
+            <p>For weekly rates and 2026 availability, contact me directly.</p>
+        </div>
+        <div class="lang-fr" lang="fr">
+            <h2>Organisons votre séjour</h2>
+            <p>Pour les tarifs hebdomadaires et disponibilités 2026, contactez-moi directement.</p>
+        </div>
+        
+        <br>
+        <a href="https://wa.me/590690661348" target="_blank" class="whatsapp-btn">
+            WhatsApp Concierge
+        </a>
+    </section>
+
+    <footer>
+        &copy; 2026 BEN TAXI ST BARTH — FULL STAY STANDBY SERVICE <br>
+        MERCEDES V-CLASS — SAINT-BARTHÉLEMY, F.W.I
+    </footer>
+
+    <script>
+        let currentLang = 'en';
+
+        function switchLang() {
+            const enEls = document.querySelectorAll('.lang-en');
+            const frEls = document.querySelectorAll('.lang-fr');
+            const btn = document.querySelector('.lang-switch');
+
+            if (currentLang === 'en') {
+                enEls.forEach(el => el.style.display = 'none');
+                frEls.forEach(el => el.style.display = 'block');
+                currentLang = 'fr';
+            } else {
+                enEls.forEach(el => el.style.display = 'block');
+                frEls.forEach(el => el.style.display = 'none');
+                currentLang = 'en';
+            }
+        }
+    </script>
+
+</body>
+</html>
