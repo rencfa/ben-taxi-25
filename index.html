@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Taxi St Barth | Luxury Standby Service 2026</title>
+    <title>Ben Taxi St Barth | Private Driver 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -14,7 +14,6 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         html { scroll-behavior: smooth; }
 
         body {
@@ -22,10 +21,9 @@
             background-color: var(--bg-white);
             color: var(--text-dark);
             -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
         }
 
-        /* Nav & Language Switch */
+        /* Lang Switch */
         .nav-container {
             position: absolute;
             top: 0;
@@ -38,20 +36,20 @@
 
         .lang-switch {
             background: none;
-            border: 1px solid rgba(255,255,255,0.5);
+            border: 1px solid rgba(255,255,255,0.4);
             color: #fff;
             padding: 10px 18px;
             font-weight: 700;
             cursor: pointer;
             text-transform: uppercase;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             letter-spacing: 2px;
             transition: 0.3s;
         }
 
         .lang-switch:hover { background: #fff; color: #000; border-color: #fff; }
 
-        /* Header Hero */
+        /* Hero */
         header {
             height: 100vh;
             display: flex;
@@ -60,29 +58,14 @@
             align-items: center;
             text-align: center;
             color: #fff;
-            position: relative;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Visuel2.png');
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('Visuel2.png');
             background-size: cover;
             background-position: center;
             padding: 0 20px;
         }
 
-        h1 { 
-            font-size: clamp(3rem, 12vw, 7rem); 
-            font-weight: 900; 
-            text-transform: uppercase; 
-            letter-spacing: -4px; 
-            line-height: 0.85; 
-        }
-
-        .hero-sub { 
-            font-size: clamp(0.8rem, 3vw, 1.1rem); 
-            letter-spacing: 5px; 
-            text-transform: uppercase; 
-            font-weight: 300; 
-            margin: 25px 0 45px 0; 
-            opacity: 0.9;
-        }
+        h1 { font-size: clamp(3rem, 12vw, 7rem); font-weight: 900; text-transform: uppercase; letter-spacing: -4px; line-height: 0.85; }
+        .hero-sub { font-size: clamp(0.7rem, 2.5vw, 1rem); letter-spacing: 5px; text-transform: uppercase; font-weight: 300; margin: 25px 0 45px 0; opacity: 0.8; }
 
         /* Buttons */
         .whatsapp-btn {
@@ -92,63 +75,24 @@
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.4s ease;
         }
 
-        .btn-hero {
-            background: transparent;
-            color: #fff;
-            border: 1px solid #fff;
-        }
-
+        .btn-hero { background: transparent; color: #fff; border: 1px solid #fff; }
         .btn-hero:hover { background: #fff; color: #000; }
 
-        .btn-dark {
-            background: var(--bg-black);
-            color: #fff;
-            border: 1px solid var(--bg-black);
-        }
-
-        .btn-dark:hover { background: transparent; color: var(--bg-black); }
-
-        /* Main Content Section */
+        /* Content */
         .section-white { padding: 100px 8%; max-width: 1400px; margin: 0 auto; }
-        
-        .grid { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 60px; 
-            align-items: center; 
-        }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 
-        h2 { 
-            font-size: clamp(2rem, 6vw, 3.5rem); 
-            font-weight: 900; 
-            text-transform: uppercase; 
-            margin-bottom: 30px; 
-            line-height: 1;
-            letter-spacing: -1px;
-        }
+        h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; text-transform: uppercase; margin-bottom: 30px; line-height: 1.1; letter-spacing: -1px; }
+        p { font-size: 1.15rem; color: #333; margin-bottom: 25px; font-weight: 300; line-height: 1.7; }
 
-        p { 
-            font-size: clamp(1rem, 2vw, 1.2rem); 
-            color: #333; 
-            margin-bottom: 25px; 
-            font-weight: 300; 
-            line-height: 1.7; 
-        }
+        .img-box img { width: 100%; display: block; filter: grayscale(100%); transition: 1.2s ease; }
+        .img-box:hover img { filter: grayscale(0%); }
 
-        .img-box img { 
-            width: 100%; 
-            display: block;
-            filter: grayscale(100%); 
-            transition: 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .img-box:hover img { filter: grayscale(0%); transform: scale(1.02); }
-
-        /* Full Black Standby Section */
+        /* Final Section */
         .section-black {
             background-color: var(--bg-black);
             color: var(--text-light);
@@ -156,34 +100,19 @@
             text-align: center;
         }
 
-        .section-black h2 { border-left: none; padding-left: 0; }
-        .section-black p { color: #aaa; margin: 0 auto 50px auto; max-width: 700px; }
+        .section-black p { color: #888; margin: 0 auto 50px auto; max-width: 650px; }
 
-        /* Footer */
-        footer { 
-            padding: 50px 20px; 
-            text-align: center; 
-            font-size: 0.7rem; 
-            letter-spacing: 2px; 
-            color: #999; 
-            text-transform: uppercase; 
-        }
+        footer { padding: 50px 20px; text-align: center; font-size: 0.65rem; letter-spacing: 2px; color: #999; text-transform: uppercase; }
 
         /* Language Logic */
         [lang="fr"] { display: none; }
 
-        /* Mobile Specific Adjustments */
-        @media (max-width: 1024px) {
-            .grid { gap: 40px; }
-        }
-
         @media (max-width: 768px) {
             .grid { grid-template-columns: 1fr; text-align: center; }
-            .img-box { order: -1; margin-bottom: 20px; }
-            .nav-container { justify-content: center; padding: 20px; }
-            header { height: 80vh; }
-            .section-white, .section-black { padding: 80px 5%; }
-            .whatsapp-btn { width: 100%; padding: 20px 0; }
+            .img-box { order: -1; }
+            .nav-container { justify-content: center; }
+            header { height: 85vh; }
+            .whatsapp-btn { width: 100%; }
         }
     </style>
 </head>
@@ -193,33 +122,31 @@
         <button class="lang-switch" onclick="switchLang()">FR / EN</button>
     </nav>
 
-    <!-- HERO -->
     <header>
         <div class="lang-en">
             <h1>Ben Taxi</h1>
-            <p class="hero-sub">Full Stay Standby & Luxury Driver</p>
-            <a href="#contact" class="whatsapp-btn btn-hero">Inquiry for 2026</a>
+            <p class="hero-sub">Licensed Luxury Driver | St Barthélemy</p>
+            <a href="#contact" class="whatsapp-btn btn-hero">Direct Inquiry</a>
         </div>
         <div class="lang-fr" lang="fr">
             <h1>Ben Taxi</h1>
-            <p class="hero-sub">Service Standby & Chauffeur Privé</p>
-            <a href="#contact" class="whatsapp-btn btn-hero">Disponibilités 2026</a>
+            <p class="hero-sub">Transport de Luxe Accrédité | St Barthélemy</p>
+            <a href="#contact" class="whatsapp-btn btn-hero">Contact Direct</a>
         </div>
     </header>
 
-    <!-- DETAILS -->
     <section class="section-white">
         <div class="grid">
             <div class="content">
                 <div class="lang-en">
-                    <h2>24/7 <br>At Disposal.</h2>
-                    <p>Why book multiple taxis when you can have a dedicated driver? I specialize in <strong>weekly standby services</strong>, ensuring your transportation is never a concern during your stay.</p>
-                    <p>Exclusive use of a pristine White Mercedes V-Class for you and your guests.</p>
+                    <h2>Premium <br>Island Mobility.</h2>
+                    <p>Trust and professionalism at your service. I provide high-standard transportation with a focus on punctuality and a refined knowledge of the island's expectations.</p>
+                    <p>Travel in a meticulous <strong>White Mercedes V-Class</strong>, ensuring your journeys are smooth, secure, and perfectly adapted to your schedule.</p>
                 </div>
                 <div class="lang-fr" lang="fr">
-                    <h2>24/7 <br>À Disposition.</h2>
-                    <p>Ne perdez plus de temps à chercher un transport. Je me spécialise dans le <strong>service standby à la semaine</strong>, garantissant une mobilité totale sans aucune attente.</p>
-                    <p>Usage exclusif d'un Mercedes Classe V blanc pour vous et vos invités tout au long de votre séjour.</p>
+                    <h2>Mobilité <br>Haut de Gamme.</h2>
+                    <p>Confiance et professionnalisme à votre service. Je propose un transport de haute qualité, axé sur la ponctualité et une connaissance précise des attentes de l'île.</p>
+                    <p>Voyagez à bord d'un <strong>Mercedes Classe V blanc</strong> entretenu avec soin, pour des trajets fluides, sécurisés et parfaitement adaptés à votre emploi du temps.</p>
                 </div>
             </div>
             <div class="img-box">
@@ -228,19 +155,18 @@
         </div>
     </section>
 
-    <!-- CONTACT / STANDBY -->
     <section id="contact" class="section-black">
         <div class="lang-en">
-            <h2>Weekly Concierge</h2>
-            <p>Ready to secure your private logistics? Contact me via WhatsApp for tailored weekly rates and professional concierge assistance.</p>
+            <h2>Reliable Partner</h2>
+            <p>From punctual transfers to flexible availability during your stay, feel free to reach out for a seamless transportation experience.</p>
         </div>
         <div class="lang-fr" lang="fr">
-            <h2>Conciergerie Hebdomadaire</h2>
-            <p>Besoin d'un chauffeur dédié pour votre séjour ? Contactez-moi via WhatsApp pour obtenir un tarif hebdomadaire sur mesure.</p>
+            <h2>Partenaire de Confiance</h2>
+            <p>Qu'il s'agisse de transferts ponctuels ou d'une disponibilité flexible durant votre séjour, n'hésitez pas à me contacter pour une expérience de transport irréprochable.</p>
         </div>
         
         <a href="https://wa.me/590690661348" target="_blank" class="whatsapp-btn btn-hero">
-            WhatsApp Concierge
+            WhatsApp Private Line
         </a>
     </section>
 
@@ -251,11 +177,9 @@
 
     <script>
         let currentLang = 'en';
-
         function switchLang() {
             const enEls = document.querySelectorAll('.lang-en');
             const frEls = document.querySelectorAll('.lang-fr');
-
             if (currentLang === 'en') {
                 enEls.forEach(el => el.style.display = 'none');
                 frEls.forEach(el => el.style.display = 'block');
@@ -267,6 +191,5 @@
             }
         }
     </script>
-
 </body>
 </html>
